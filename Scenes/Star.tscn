@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cb22c8t5ycido"]
+
+[ext_resource type="Script" uid="uid://c8r0yi7ghoiyp" path="res://Scripts/Scripts.gd" id="1_6ojbo"]
+[ext_resource type="Texture2D" uid="uid://dey206w0s3fk1" path="res://Sprites/starcoding-removebg-preview.png" id="2_0l0nv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kd7x3"]
+radius = 24.020824
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=872659871]
+script = ExtResource("1_6ojbo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=142888254]
+position = Vector2(-1.9073486e-06, 0)
+scale = Vector2(0.23591551, 0.19281046)
+texture = ExtResource("2_0l0nv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1836103391]
+shape = SubResource("CircleShape2D_kd7x3")

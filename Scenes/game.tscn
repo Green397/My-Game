@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dgc20r4p4ddg8"]
+
+[ext_resource type="PackedScene" uid="uid://cb8d3yj2qvfmb" path="res://Scenes/killzone.tscn" id="2_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://cb22c8t5ycido" path="res://Scenes/Star.tscn" id="2_wrm1d"]
+[ext_resource type="Texture2D" uid="uid://5j03gjkc6k2p" path="res://Sprites/Urban Nightscape/1920X1080/Urban Nightscape.png" id="3_wrm1d"]
+
+[node name="game" type="Node2D" unique_id=1601634107]
+
+[node name="Killzone" parent="." unique_id=596462045 instance=ExtResource("2_qxrlw")]
+z_index = 1
+position = Vector2(310, 636)
+
+[node name="CharacterBody2D" parent="." unique_id=872659871 instance=ExtResource("2_wrm1d")]
+z_index = 1
+position = Vector2(314, 380)
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=1150924180]
+repeat_size = Vector2(3100, 10)
+autoscroll = Vector2(-100, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=1985078274]
+position = Vector2(1565.0002, 356)
+scale = Vector2(1.624349, 0.6546295)
+texture = ExtResource("3_wrm1d")
+
+[node name="Killzone2" parent="." unique_id=1078681339 instance=ExtResource("2_qxrlw")]
+z_index = 1
+position = Vector2(301, 6)
+rotation = -3.1360276
